@@ -33,10 +33,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
  */
-#define MATRIX_ROW_PINS \
-    { D3, D2, D1, D0, D4 }
-#define MATRIX_COL_PINS \
-    { C6, D7, E6, B4, B5, B0, D5, B6, B2, B3, B1, F7, F6, F5, F4 }
+
+#define MATRIX_ROW_PINS { B3, A15, B9, A8, B15 }
+#define MATRIX_COL_PINS { B4, B5, B6, B7, B8, A7, A6, A5, A4, A3, A2, A1, A0, C15, C14 }
+
+// #define MATRIX_ROW_PINS { 39, 38, 46, 29, 28 }
+// #define MATRIX_COL_PINS { 40, 41, 42, 43, 45, 17, 16, 15, 14, 13, 12, 11, 10, 4, 3 }
 
 /* COL2ROW, ROW2COL*/
 #define DIODE_DIRECTION COL2ROW
@@ -122,3 +124,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Bootmagic Lite key configuration */
 // #define BOOTMAGIC_LITE_ROW 0
 // #define BOOTMAGIC_LITE_COLUMN 0
+
+#define RGB_DI_PIN B1
+#define RGBLED_NUM 41
+#define RGBLIGHT_LAYERS_RETAIN_VAL
+#define RGBLIGHT_LAYERS
+
+#define RGBLIGHT_DEFAULT_HUE 85
+#define RGBLIGHT_DEFAULT_SAT 175
+#define RGBLIGHT_DEFAULT_VAL 125
+
+
+#define RGBLIGHT_EFFECT_BREATHING
+#define RGBLIGHT_EFFECT_CHRISTMAS 
+#define RGBLIGHT_EFFECT_KNIGHT
+#define RGBLIGHT_EFFECT_RAINBOW_MOOD
+#define RGBLIGHT_EFFECT_RAINBOW_SWIRL
+#define RGBLIGHT_EFFECT_RGB_TEST
+#define RGBLIGHT_EFFECT_SNAKE
+#define RGBLIGHT_EFFECT_STATIC_GRADIENT
+#define RGBLIGHT_EFFECT_TWINKLE
+
+
